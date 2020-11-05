@@ -16,7 +16,7 @@ nfcreader
 
 
 
-Python API for NFC reader to run on the Pi Zero.
+Python API for CR95HF NFC reader to run on the Pi Zero. Used as a python wrapper for the existing C API provided for the CR95HF module by STMicroelectronics. However, it was found to be lacking for Linux users, as well as difficult to compile and run compared to a Python API. 
 
 
 * Free software: MIT license
@@ -26,6 +26,7 @@ Abstract
 --------
 Use case scenario for demonstrator application: Student access to venues.
 The aim was to provide better support for the CR95HF's use for the Raspberry Pi in Python3, via an API.
+A demonstrator application was created for showing the uses of the API for an access control use case: https://github.com/IanEdwards99/CR95HF_Demo_App
 
 Features
 --------
@@ -41,7 +42,7 @@ Features
 - ResetToReady
 - MCUrev
 - Echo
-- Idn
+- Idn (Get ID number of CR95HF module)
 - GetPinInterfaceState
 - Reading from NFC tag
 - Writing to NFC tag
