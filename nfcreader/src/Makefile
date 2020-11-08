@@ -4,7 +4,7 @@ prefix=/usr
 #LDFLAGS=-lCR95HF -lusb-1.0
 LDFLAGS=-lusb-1.0
 
-all: libCR95HF.so TestApp
+all: libCR95HF.so
 
 TestApp: TestApp.cpp
 	$(CC) TestApp.cpp -o TestApp $(LDFLAGS) -lCR95HF
