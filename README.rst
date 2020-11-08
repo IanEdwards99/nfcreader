@@ -58,10 +58,12 @@ Installation
 ------------
 pip install the file from PyUp, or clone this git repo and "make install".
 It is important to install 3 dependancies to use the CR95HF with its C library and development board:
-- sudo apt-get install build-essential
-- sudo apt-get install g++
-- sudo apt-get install libusb-1.0-0-dev
+
+- "sudo apt-get install build-essential"
+- "sudo apt-get install g++"
+- "sudo apt-get install libusb-1.0-0-dev"
 - Navigate to ./nfcreader/nfcreader/src and run "make" to compile a libCR95HF.so file for your current architecture.
+
 Lastly, add libCR95HF.so, found in the src folder, to your environment variable. If your program still fails, copy it to your /lib and /usr/lib folders in your root directory.
 
 Credits

@@ -12,9 +12,9 @@ before_install:
   - sudo apt-get install libusb-1.0-0-dev
   - cd nfcreader/src/
   - make
-  - export LD_LIBRARY_PATH="$./libCR95HF.so:$LD_LIBRARY_PATH"
   - cd /
-  - sudo cp /home/travis/build/IanEdwards99/nfcreader/nfcreader/src/libCR95HF.so .
+  - sudo cp /home/travis/build/IanEdwards99/nfcreader/nfcreader/src/libCR95HF.so ./lib
+  - sudo cp /home/travis/build/IanEdwards99/nfcreader/nfcreader/src/libCR95HF.so ./usr/lib
   - cd /home/travis/build/IanEdwards99/nfcreader/
 # Command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
 install: 
