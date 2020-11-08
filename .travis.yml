@@ -10,6 +10,7 @@ before_install:
   - export LD_LIBRARY_PATH="$./libCR95HF.so:$LD_LIBRARY_PATH"
   - cd /
   - sudo cp /home/travis/build/IanEdwards99/nfcreader/libCR95HF.so .
+  - cd /home/travis/build/IanEdwards99/nfcreader/
 # Command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
 install: pip install -U tox-travis
 
