@@ -21,6 +21,7 @@ Python API for CR95HF NFC reader to run on the Pi Zero. Used as a python wrapper
 
 * Free software: MIT license
 * Documentation: https://nfcreader.readthedocs.io.
+* PyPi: https://pypi.org/project/nfcreader/
 
 Abstract
 --------
