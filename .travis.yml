@@ -14,7 +14,11 @@ before_install:
   - sudo cp /home/travis/build/IanEdwards99/nfcreader/nfcreader/src/libCR95HF.so .
   - cd /home/travis/build/IanEdwards99/nfcreader/
 # Command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
-install: pip install -U tox-travis
+install: 
+  - apt-get install build-essential
+  - apt-get install install g++
+  - apt-get install libusb-1.0-0-dev
+  - pip install -U tox-travis
 
 # Command to run tests, e.g. python setup.py test
 script: tox
